@@ -1,0 +1,40 @@
+{
+	"name": "pl_proces_cases_deaths",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy_processs_case_death",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "1.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "df_cases_death_source_transform",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "None",
+					"cacheSinks": {
+						"firstRowOnly": true
+					}
+				}
+			}
+		],
+		"folder": {
+			"name": "process"
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-07-18T06:42:22Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
