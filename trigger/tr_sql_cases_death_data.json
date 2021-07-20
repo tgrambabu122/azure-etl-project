@@ -2,7 +2,7 @@
 	"name": "tr_sql_cases_death_data",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "pl_sql_cases_deaths_data",

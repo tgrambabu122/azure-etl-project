@@ -2,7 +2,7 @@
 	"name": "tr_process_Casses_death",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "pl_proces_cases_deaths",
